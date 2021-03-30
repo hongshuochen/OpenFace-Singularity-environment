@@ -10,6 +10,15 @@ On HPC server:
 ```shell
 singularity pull docker://[user_name/repo_name:tag_name]
 singularity shell [repo_name_tag_name].sif
+```
+
+Or you could use my predfined environment:
+```
+singularity pull docker://hongshuo0729/openface
+singularity shell openface_latest.sif
+```
+
+```
 cd OpenFace
 mkdir build
 cd build
