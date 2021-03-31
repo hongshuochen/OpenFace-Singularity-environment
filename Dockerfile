@@ -14,7 +14,7 @@ RUN wget https://github.com/opencv/opencv/archive/4.1.0.zip \
 && make install \
 && cd ../.. \
 && rm -rf opencv-4.1.0 \
-&& rm 4.1.0.zip
+&& rm -f 4.1.0.zip
 
 RUN wget http://dlib.net/files/dlib-19.13.tar.bz2 \
 && tar xf dlib-19.13.tar.bz2 \
@@ -26,4 +26,5 @@ RUN wget http://dlib.net/files/dlib-19.13.tar.bz2 \
 && make install \
 && ldconfig \
 && cd ../.. \
-&& rm dlib-19.13.tar.bz2
+&& rm -rf dlib-19.13 \
+&& rm -f dlib-19.13.tar.bz2
